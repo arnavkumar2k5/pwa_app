@@ -1,11 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lexend:wght@100..900&family=Nerko+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
+.chat-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
-body{
-  background-color: #EEE5DB;
-  font-family: "Lexend";
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: scroll;
+  background-color: #f1f1f1;
+}
+
+.message {
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.message.you {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.message.user {
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.chat-footer button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
 }
